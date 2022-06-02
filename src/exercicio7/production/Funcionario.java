@@ -15,11 +15,14 @@ abstract class Funcionario {
 	public static double bonificacao(double valor) {
 		return valor;
 	}
-	
+
+
 	@Override
 	public String toString() {
-	  return String.valueOf(this.nome);
+		return "Funcionario [nome=" + nome + ", idade=" + idade + ", salario=" + salario + "]";
 	}
+	
+	
 
 
 	

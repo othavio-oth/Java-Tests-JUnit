@@ -53,15 +53,15 @@ public class Loja {
 		System.out.printf("A loja %s possui estes livros para venda:\n", nome);
 		for (Iterator<Livro> iterator = livros.iterator(); iterator.hasNext();) {
 			Livro livro = (Livro) iterator.next();
-				System.out.printf("T�tulo: %s | Pre�o: %2f | Quantidade: %s em estoque. \n", livro.getNome(), livro.getPreco(), livro.qtd);
+				System.out.printf("Titulo: %s | Preco: %2f | Quantidade: %s em estoque. \n", livro.getNome(), livro.getPreco(), livro.qtd);
 		}
 		
 	}
 	public void listaGames() {
 		System.out.printf("A loja %s possui estes videogames para venda:\n", nome );
-		for (Iterator iterator = videogames.iterator(); iterator.hasNext();) {
+		for (Iterator<VideoGame> iterator = videogames.iterator(); iterator.hasNext();) {
 			VideoGame game = (VideoGame) iterator.next();
-			System.out.printf("Videogame: %s | Pre�o: %2f | Quantidade: %s em estoque. \n", game.getNome(), game.getPreco(), game.qtd);
+			System.out.printf("Videogame: %s | Preco: %2f | Quantidade: %s em estoque. \n", game.getNome(), game.getPreco(), game.qtd);
 						
 		}
 	}		
@@ -88,6 +88,12 @@ public class Loja {
 		return patrimonioTotal;
 		
 	}
+	
+	public void mostraPatrimonio() {
+		System.out.printf("O patrimonio da loja %s e %s",this.nome, calculaPatrimonio());
+	}
+	
+	
 	
 	
 

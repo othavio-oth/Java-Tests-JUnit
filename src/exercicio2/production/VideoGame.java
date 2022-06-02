@@ -4,6 +4,7 @@ public class VideoGame extends Produto{
 	
 	String marca, modelo;
 	boolean isUsado;
+	double valorTaxa;
 	
 	public VideoGame() {
 		
@@ -27,10 +28,16 @@ public class VideoGame extends Produto{
 	Imposto taxa = new Taxa();
 
 	public double calculaImposto(){
-	double valorTaxa = taxa.defineImposto(this.isUsado)*this.preco;
+	valorTaxa = taxa.defineImposto(this.isUsado)*this.preco;
 	return valorTaxa;
 	
+	
 }
+	
+
+	public void mostrarTaxa() {
+		System.out.println("A taxa do Game "+this.nome+" e "+ calculaImposto() );
+	}
 	
 	
 }

@@ -109,7 +109,7 @@ public class Veiculo {
 			else {
 				System.out.println("O carro precisa estar  ligado para acelerar");
 			}
-			System.out.println("Acelerou! Agora a velocidade é de "+velocidade);
+			System.out.println("Acelerou! Agora a velocidade e de "+velocidade);
 		}
 		
 		public void abastecer(int combustivelParaAbastecer) {
@@ -118,7 +118,7 @@ public class Veiculo {
 			
 			if(litrosCombustivel + combustivelParaAbastecer <=limiteCombustivel) {
 				litrosCombustivel += combustivelParaAbastecer;
-				System.out.printf("Agora temos %s litros de combust�vel \n",litrosCombustivel );
+				System.out.printf("Agora temos %s litros de combustivel \n",litrosCombustivel );
 			} else {
 				int combustivelQueCabe = limiteCombustivel-litrosCombustivel;
 				litrosCombustivel+=combustivelQueCabe;
@@ -131,7 +131,7 @@ public class Veiculo {
 		public void freiar() {
 			if(velocidade >= 20) {
 				velocidade -= 20;
-			System.out.println("Freiou! Agora a velocidade � de "+velocidade);
+			System.out.println("Freiou! Agora a velocidade e de "+velocidade);
 
 			}
 			else {
@@ -142,7 +142,7 @@ public class Veiculo {
 		
 		public void pintar(String novaCor) {
 			this.cor = novaCor;
-			System.out.println("Agora o carro é "+cor);
+			System.out.println("Agora o carro e "+cor);
 		}
 		
 		public void desligar(){

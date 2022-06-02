@@ -47,6 +47,16 @@ abstract class Produto {
 		this.qtd = qtd;
 	}
 
+
+	@Override
+	public String toString() {
+		return "Produto [nome=" + nome + ", preco=" + preco + ", qtd=" + qtd + ", getNome()=" + getNome()
+				+ ", getPreco()=" + getPreco() + ", getQtd()=" + getQtd() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+
+	
+	
 	
 	
 }

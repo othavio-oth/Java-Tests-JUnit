@@ -10,6 +10,18 @@ public class Index {
 		Livro l2 = new Livro("Harry Potter",40,50,"J. R. R. Tolkien","Fantasia",300);
 		Livro l3 = new Livro("JAVA POO", 20,50,"GFT","educativo",500);
 		
+		
+//		
+//		if( valorTaxa>0) {
+//			System.out.println("A taxa do livro "+this.nome+"  � "+ taxa.defineImposto(this.tema)*this.preco );
+//		}
+//		else {
+//			System.out.println("Livro educatico n�o tem taxa: "+this.nome);
+//		}
+//		System.out.println("A taxa do Game "+this.nome+"  � "+ valorTaxa );
+
+		
+		
 		l1.calculaImposto();
 		l3.calculaImposto();
 		List<Livro> livros = new ArrayList<>();
@@ -29,6 +41,8 @@ public class Index {
 		
 		americanas.listaLivros();
 		americanas.listaGames();
+		
+		
 		americanas.calculaPatrimonio();
 	
 	

@@ -8,12 +8,12 @@ public class Loja {
 	
 	String nome, cnpj;
 	
-	Loja(){}
+	public Loja(){}
 	
 
 	
 	
-	Loja(String nome, String cnpj, List<Livro> livros, List<VideoGame> videogames) {
+	public Loja(String nome, String cnpj, List<Livro> livros, List<VideoGame> videogames) {
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.livros = livros;
@@ -27,6 +27,7 @@ public class Loja {
 	List <Livro> livros = new ArrayList<>();
 	List <VideoGame> videogames = new ArrayList<VideoGame>();
 
+	
 	public String getNome() {
 		return nome;
 	}
@@ -73,7 +74,7 @@ public class Loja {
 	
 	
 	
-	public void calculaPatrimonio() {
+	public double calculaPatrimonio() {
 		double patrimonioEmLivros = 0;
 		for (Livro livro : livros) {
 			patrimonioEmLivros+=livro.preco*livro.qtd;
@@ -84,9 +85,7 @@ public class Loja {
 		}
 		
 		double patrimonioTotal = patrimonioEmGames + patrimonioEmLivros;
-		System.out.println("O patrimonio total � " + patrimonioTotal);
-		System.out.println(patrimonioEmGames);
-		System.out.println(patrimonioEmLivros);
+		return patrimonioTotal;
 		
 	}
 	

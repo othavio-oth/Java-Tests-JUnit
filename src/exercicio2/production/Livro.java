@@ -5,7 +5,7 @@ public class Livro extends Produto{
 	String autor;
 	String tema;
 	int qtdPag;
-	
+
 	
 	public Livro() {
 		
@@ -52,15 +52,10 @@ public class Livro extends Produto{
 	Imposto taxa = new Taxa();
 	
 
-	public void calculaImposto(){
+	public double calculaImposto(){
 		
-		double valorTaxa = taxa.defineImposto(this.tema)*this.preco;
-		if(valorTaxa>0) {
-			System.out.println("A taxa do livro "+this.nome+"  � "+ taxa.defineImposto(this.tema)*this.preco );
-		}
-		else {
-			System.out.println("Livro educatico n�o tem taxa: "+this.nome);
-		}
+		double valorImposto = taxa.defineImposto(this.tema)*this.preco;
+		return valorImposto;
 		
 	
 }

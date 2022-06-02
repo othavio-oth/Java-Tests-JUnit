@@ -24,18 +24,18 @@ public class FuncionarioTest {
 	
 	@Test
 	public void deveRetornarBonificacaoAoGerente() throws Exception {
-		assertEquals(10000, gerente.bonificacao(),0000.1);
+		assertEquals(10000, Gerente.bonificacao(),0000.1);
 	}
 	
 	@Test
 	public void deveRetornarBonificacaoAoSupervisor() throws Exception {
-		assertEquals(5000, supervisor.bonificacao(),0000.1);
+		assertEquals(5000, Supervisor.bonificacao(),0000.1);
 	}
 	
 	
 	@Test
 	public void deveRetornarBonificacaoAoVendedor() throws Exception {
-		assertEquals(3000, vendedor.bonificacao(),0000.1);
+		assertEquals(3000, Vendedor.bonificacao(),0000.1);
 	}
 	
 	

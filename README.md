@@ -1,6 +1,6 @@
 # DESAFIOS  TDD
 
-DesafioS de Testes Unitários e TDD
+Desafios de Testes Unitários e TDD
 # COMO RODAR
 Depois de baixar o projeto, vá até DESAFIO - TDD\src\ e encontre a package main.principal. Execute o arquivo Main que está dentro dessa package.
 Vai aparecer no console um menu para visualizar cada um dos consoles dos exercícios propostos. O usuário pode escolher qual exercício vai ver.
